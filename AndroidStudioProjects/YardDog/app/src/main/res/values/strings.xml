@@ -12,17 +12,11 @@
     <string name="title_activity_find_yard">FindYard</string>
     <string name="title_activity_map">Map</string>
     <string name="title_activity_request">Request</string>
-    <string name="login_text">Login</string>
 
-    <!--Login screen strings-->
-    <string name="loginButtonTitle">Login</string>
-    <string name="newAccountButtonText">New Account</string>
-    <string name="userNameTextHint">User Name</string>
-    <string name="passWordText">Password</string>
-
-    <!--Home screen strings-->
-    <string name="findAYardButtonText">Find A Yard!</string>
-    <string name="profileButtonText">Profile</string>
-    <string name="openYardButtonText">Open a Yard!</string>
-
+    <!--Profile Strings-->
+    <string name="profile_your_profile">Your Profile</string>
+    <string name="profile_your_dogs">Your Dogs</string>
+    <string name="profile_your_yard">Your Yard</string>
+    <string name="profile_username">Bob</string>
+    <string name="profile_name_field">Name:</string>
 </resources>

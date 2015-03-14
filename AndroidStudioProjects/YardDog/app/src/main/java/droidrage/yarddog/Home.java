@@ -1,10 +1,11 @@
 package droidrage.yarddog;
 
-import android.content.Intent;
+
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
 
 
 public class Home extends ActionBarActivity {
@@ -13,8 +14,8 @@ public class Home extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Intent intent = getIntent();
     }
+
 
 
     @Override
