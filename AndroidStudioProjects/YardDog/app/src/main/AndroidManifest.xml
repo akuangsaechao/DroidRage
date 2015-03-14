@@ -9,7 +9,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".StartScreen"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,38 +19,47 @@
         </activity>
         <activity
             android:name=".Home"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_home" >
         </activity>
         <activity
             android:name=".Profile"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_profile" >
         </activity>
         <activity
             android:name=".ProfileYou"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_profile_you" >
         </activity>
         <activity
             android:name=".ProfileDog"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_profile_dog" >
         </activity>
         <activity
             android:name=".ProfileYard"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_profile_yard" >
         </activity>
         <activity
             android:name=".Yard"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_yard" >
         </activity>
         <activity
             android:name=".FindYard"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_find_yard" >
         </activity>
         <activity
             android:name=".Map"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_map" >
         </activity>
         <activity
             android:name=".Request"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_request" >
         </activity>
     </application>
