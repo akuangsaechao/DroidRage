@@ -16,6 +16,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+//        debug {
+//            resValue "string", "google_maps_api_key", "[YOUR DEV KEY]"
+//        }
+//        release {
+//            resValue "string", "google_maps_api_key", "[YOUR PROD KEY]"
+//        }
+
     }
 }
 
