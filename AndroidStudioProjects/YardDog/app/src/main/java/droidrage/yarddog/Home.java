@@ -1,10 +1,13 @@
 package droidrage.yarddog;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Home extends ActionBarActivity {
@@ -14,8 +17,53 @@ public class Home extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Intent intent = getIntent();
+
+        this.addListenerOnButtonOpenYard();
+        this.addListenerOnButtonProfile();
+        this.addListenerOnButtonFilters();
     }
 
+    public void addListenerOnButtonOpenYard() {
+
+        Button button;
+        final Context context = this;
+        button = (Button) findViewById(R.id.openYard);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, Yard.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void addListenerOnButtonProfile() {
+
+        Button button;
+        final Context context = this;
+        button = (Button) findViewById(R.id.findAYardButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, FindYard.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void addListenerOnButtonFilters() {
+
+        Button button;
+        final Context context = this;
+        button = (Button) findViewById(R.id.profileButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, Profile.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

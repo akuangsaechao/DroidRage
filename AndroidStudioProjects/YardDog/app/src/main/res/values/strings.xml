@@ -25,4 +25,17 @@
     <string name="profileButtonText">Profile</string>
     <string name="openYardButtonText">Open a Yard!</string>
 
+    <string name="filterTitle">Criteria</string>
+    <string name="availability">Availability</string>
+    <string name="open">Open Yard</string>
+    <string name="editYard">Edit Yard</string>
+    <string name="advance">Continue</string>
+    <string name="time">Enter a time</string>
+    <string name="date">Enter a date</string>
+    <string name="dog">Enter a dog</string>
+    <string name="from">From: </string>
+    <string name="to">To: </string>
+
+    <string name="dogSelect">Select a dog: </string>
+
 </resources>
