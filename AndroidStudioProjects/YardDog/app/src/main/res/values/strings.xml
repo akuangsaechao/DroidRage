@@ -12,17 +12,20 @@
     <string name="title_activity_find_yard">FindYard</string>
     <string name="title_activity_map">Map</string>
     <string name="title_activity_request">Request</string>
-    <string name="login_text">Login</string>
 
-    <!--Login screen strings-->
-    <string name="loginButtonTitle">Login</string>
-    <string name="newAccountButtonText">New Account</string>
-    <string name="userNameTextHint">User Name</string>
-    <string name="passWordText">Password</string>
+    <string name="filterTitle">Criteria</string>
+    <string name="availability">Availability</string>
+    <string name="open">Open Yard</string>
+    <string name="editYard">Edit Yard</string>
+    <string name="advance">Continue</string>
+    <string name="time">Enter a time</string>
+    <string name="date">Enter a date</string>
+    <string name="dog">Enter a dog</string>
+    <string name="from">From: </string>
+    <string name="to">To: </string>
 
-    <!--Home screen strings-->
-    <string name="findAYardButtonText">Find A Yard!</string>
-    <string name="profileButtonText">Profile</string>
-    <string name="openYardButtonText">Open a Yard!</string>
+    <string name="dogSelect">Select a dog: </string>
+
+
 
 </resources>

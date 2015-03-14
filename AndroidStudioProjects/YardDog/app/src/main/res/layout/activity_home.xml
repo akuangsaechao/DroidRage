@@ -3,33 +3,9 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="droidrage.yarddog.Home"
-    android:background="@color/green">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="droidrage.yarddog.Home">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/findAYardButtonText"
-        android:id="@+id/findAYardButton"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp" />
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/profileButtonText"
-        android:id="@+id/profileButton"
-        android:layout_below="@+id/openYard"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/openYardButtonText"
-        android:id="@+id/openYard"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/findAYardButton"
-        android:layout_alignEnd="@+id/findAYardButton" />
 </RelativeLayout>
