@@ -13,10 +13,26 @@
     <string name="title_activity_map">Map</string>
     <string name="title_activity_request">Request</string>
 
+<<<<<<< HEAD
     <!--Profile Strings-->
     <string name="profile_your_profile">Your Profile</string>
     <string name="profile_your_dogs">Your Dogs</string>
     <string name="profile_your_yard">Your Yard</string>
     <string name="profile_username">Bob</string>
     <string name="profile_name_field">Name:</string>
+=======
+    <string name="filterTitle">Criteria</string>
+    <string name="availability">Availability</string>
+    <string name="open">Open Yard</string>
+    <string name="editYard">Edit Yard</string>
+    <string name="advance">Continue</string>
+    <string name="time">Enter a time</string>
+    <string name="date">Enter a date</string>
+    <string name="dog">Enter a dog</string>
+    <string name="from">From: </string>
+    <string name="to">To: </string>
+
+    <string name="dogSelect">Select a dog: </string>
+
+>>>>>>> josh
 </resources>

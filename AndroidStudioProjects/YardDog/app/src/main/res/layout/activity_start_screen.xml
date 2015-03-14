@@ -6,5 +6,58 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StartScreen">
 
 
+<<<<<<< HEAD
+=======
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/userNameText"
+        android:autoText="false"
+        android:hint="@string/userNameTextHint"
+        android:layout_above="@+id/passWordText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginButtonTitle"
+        android:id="@+id/loginButton"
+        android:layout_above="@+id/newAccountButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:radius="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passWordText"
+        android:hint="@string/passWordText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/userNameText"
+        android:layout_alignStart="@+id/userNameText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newAccountButtonText"
+        android:id="@+id/newAccountButton"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:top="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/yarddoglogo2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+>>>>>>> josh
 
 </RelativeLayout>

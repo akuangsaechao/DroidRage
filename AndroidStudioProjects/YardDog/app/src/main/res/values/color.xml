@@ -2,5 +2,6 @@
 <resources>
     <color name="red">#ffff0000</color>
     <color name="orange">#ffa500</color>
-    <color name="green">#2D882D</color>
+    <color name="green">#4FA045</color>
+    <color name="paleyellow">#FBE253</color>
 </resources>

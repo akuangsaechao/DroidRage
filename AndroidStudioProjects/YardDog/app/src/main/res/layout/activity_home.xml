@@ -9,4 +9,23 @@
         android:layout_height="wrap_content" />
 
 
+<<<<<<< HEAD
+=======
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/openYardButtonText"
+        android:id="@+id/openYard"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/findAYardButton"
+        android:layout_alignEnd="@+id/findAYardButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeLogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yarddoglogo2" />
+>>>>>>> josh
 </RelativeLayout>
