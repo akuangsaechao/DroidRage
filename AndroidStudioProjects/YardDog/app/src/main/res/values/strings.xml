@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YardDog</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_profile_you">ProfileYou</string>
+    <string name="title_activity_profile_dog">ProfileDog</string>
+    <string name="title_activity_profile_yard">ProfileYard</string>
+    <string name="title_activity_yard">Yard</string>
+    <string name="title_activity_find_yard">FindYard</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_request">Request</string>
+</resources>
