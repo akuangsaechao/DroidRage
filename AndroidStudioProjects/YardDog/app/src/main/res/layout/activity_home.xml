@@ -4,34 +4,43 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context="droidrage.yarddog.Home"
-    android:background="@color/green">
+    android:background="@color/green"
+    android:id="@+id/action_bar">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/findAYardButtonText"
+        android:background="@drawable/red_button"
         android:id="@+id/findAYardButton"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp" />
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="@string/findAYardButtonText"
+        style="@style/button_text"
+        android:layout_below="@+id/homeLogo"
+        android:layout_alignLeft="@+id/openYard"
+        android:layout_alignStart="@+id/openYard"
+        android:layout_marginBottom="50dp"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/profileButtonText"
+        android:background="@drawable/red_button"
         android:id="@+id/profileButton"
-        android:layout_below="@+id/openYard"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="@string/profileButtonText"
+        style="@style/button_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/openYard"
+        android:layout_alignEnd="@+id/openYard" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/openYardButtonText"
+        android:background="@drawable/red_button"
         android:id="@+id/openYard"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="@string/openYardButtonText"
+        style="@style/button_text"
         android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/findAYardButton"
-        android:layout_alignEnd="@+id/findAYardButton" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
 
     <ImageView
         android:layout_width="wrap_content"

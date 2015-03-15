@@ -28,15 +28,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="59dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/loginButtonTitle"
-        android:id="@+id/loginButton"
-        android:layout_above="@+id/newAccountButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="74dp"
-        android:radius="10dp"/>
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -49,22 +41,34 @@
         android:layout_alignLeft="@+id/userNameText"
         android:layout_alignStart="@+id/userNameText"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/newAccountButtonText"
-        android:id="@+id/newAccountButton"
-        android:layout_marginBottom="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:top="10dp"/>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:background="@drawable/yarddoglogo2"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/red_button"
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="@string/loginButtonTitle"
+        style="@style/button_text"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/passWordText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:background="@drawable/red_button"
+        android:id="@string/newAccountButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="@string/newAccountButtonText"
+        style="@style/button_text"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

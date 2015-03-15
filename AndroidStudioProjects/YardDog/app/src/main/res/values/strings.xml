@@ -36,6 +36,36 @@
     <string name="from">From: </string>
     <string name="to">To: </string>
 
+    <string name="y.avail">Yard Available?</string>
+    <string name="y.start_time">Open:</string>
+    <string name="y.start_time.input">(enter time)</string>
+    <string name="y.end_time">Close:</string>
+    <string name="y.end_time.input">(enter time2)</string>
+    <string name="y.description">Enter Description</string>
+    <string name="yard_image">Your Yard</string>
+    <string name="include">Include your yard?</string>
+
     <string name="dogSelect">Select a dog: </string>
+
+    <!--Profile Strings-->
+    <string name="profile_your_profile">Your Profile</string>
+    <string name="profile_your_dogs">Your Dogs</string>
+    <string name="profile_your_yard">Your Yard</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_name_field">User Name: </string>
+    <string name="profile_fname_field">First Name: </string>
+    <string name="profile_lname_field">Last Name: </string>
+    <string name="profile_fusername">First Name</string>
+    <string name="profile_lusername">Last Name</string>
+    <string name="profile_age">Age: </string>
+    <string name="profile_age_field">Age </string>
+    <string name="profile_bio">Bio: </string>
+    <string name="profile_bio_field">Bio </string>
+
+    <string name="profileyard">default pic</string>
+    <string name="include.type">Allow Dog Type:</string>
+    <string name="img.edit">+</string>
+    <string name="address">Enter Your Address</string>
+    <string name="description">Enter Yard Description</string>
 
 </resources>

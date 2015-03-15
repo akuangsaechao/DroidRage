@@ -7,7 +7,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="droidrage.yarddog.FindYard"
-    android:id="@+id/action_bar">
+    android:id="@+id/action_bar"
+    android:background="@color/green">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,14 +27,14 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/dogSelect"
         android:id="@+id/textView6"
-        android:layout_marginTop="64dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
-        android:paddingBottom="5dp"/>
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,13 +42,13 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/from"
         android:id="@+id/from"
-        android:layout_alignTop="@+id/editText3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
-        android:paddingBottom="5dp"/>
+        android:paddingBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText5" />
 
     <TextView
         android:id="@+id/to"
@@ -65,7 +66,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/dog"
         android:ems="10"
         android:id="@+id/editText3"
         android:paddingTop="10dp"
@@ -74,30 +74,11 @@
         android:paddingBottom="5dp"
         android:ellipsize="start"
         android:gravity="center"
-        android:hint="Search text"
+        android:hint="@string/dog"
         android:background="@drawable/edittextstyle"
-        android:layout_below="@+id/textView6"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:text="@string/time"
-        android:paddingTop="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="5dp"
-        android:ellipsize="start"
-        android:gravity="center"
-        android:hint="Search text"
-        android:background="@drawable/edittextstyle"
-        android:layout_below="@+id/editText3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignLeft="@+id/editText5"
+        android:layout_alignStart="@+id/editText5" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -105,16 +86,33 @@
         android:inputType="date"
         android:ems="10"
         android:id="@+id/editText5"
-        android:text="@string/date"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
         android:gravity="center"
-        android:hint="Search text"
+        android:hint="@string/date"
         android:background="@drawable/edittextstyle"
-        android:layout_below="@+id/editText3"
+        android:layout_above="@+id/editText4"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:ellipsize="start"
+        android:gravity="center"
+        android:hint="@string/time"
+        android:background="@drawable/edittextstyle"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -123,18 +121,18 @@
         android:inputType="time"
         android:ems="10"
         android:id="@+id/editText2"
-        android:text="@string/time"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
         android:gravity="center"
-        android:hint="Search text"
+        android:hint="@string/time"
         android:background="@drawable/edittextstyle"
-        android:layout_below="@+id/editText5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginTop="36dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -142,40 +140,34 @@
         android:inputType="date"
         android:ems="10"
         android:id="@+id/editText9"
-        android:text="@string/date"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
         android:gravity="center"
-        android:hint="Search text"
+        android:hint="@string/date"
         android:background="@drawable/edittextstyle"
         android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout" />
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/editText4"
+        android:layout_toEndOf="@+id/editText4"
+        android:id="@+id/linearLayout"></LinearLayout>
 
-        <Button
-            android:background="@drawable/red_button"
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Styled Button"
-            style="@style/button_text"
-            />
+    <Button
+        android:background="@drawable/red_button"
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="66dp"
+        android:text="Continue"
+        style="@style/button_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
-        <Button
-            android:background="@drawable/red_button"
-            android:id="@+id/button1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Styled Button"
-            style="@style/button_text"
-            />
-    </LinearLayout>
 
 </RelativeLayout>

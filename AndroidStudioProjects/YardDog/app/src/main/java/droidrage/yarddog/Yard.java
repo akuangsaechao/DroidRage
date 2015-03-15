@@ -17,24 +17,22 @@ public class Yard extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yard);
 
-        //this.addListenerOnButton();
+        this.addListenerOnButtonEdityard();
     }
 
-    /*public void addListenerOnButton(){
-        final Button button;
+    public void addListenerOnButtonEdityard() {
+
+        Button button;
         final Context context = this;
-        button = (Button) findViewById(R.id.homeButton);
+        button = (Button) findViewById(R.id.editYard);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                button.setBackground(getResources().getDrawable(R.drawable.pawsquarepressedsmall));
-
-                Intent intent = new Intent(context, Home.class);
+                Intent intent = new Intent(context, ProfileYard.class);
                 startActivity(intent);
             }
-
         });
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
