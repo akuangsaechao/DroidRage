@@ -66,7 +66,7 @@ public class Map extends FragmentActivity implements
         CameraPosition INIT =
                 new CameraPosition.Builder()
                         .target(new LatLng(36.653112, -121.800244))
-                        .zoom(12)
+                        .zoom(13)
                         .bearing(300F) // orientation
                         .tilt( 50F) // viewing angle
                         .build();
@@ -74,12 +74,27 @@ public class Map extends FragmentActivity implements
         // use map to move camera into position
         mMap.moveCamera( CameraUpdateFactory.newCameraPosition(INIT) );
 
+
+        mMap.addMarker( new MarkerOptions()
+                //19.0216, 72.8646
+                .position( new LatLng(36.643587, -121.810186) )
+                .title("Yard 1")
+                .snippet("Yard Available")).showInfoWindow();
+
         //create initial marker
         mMap.addMarker( new MarkerOptions()
                 //19.0216, 72.8646
                 .position( new LatLng(36.653112, -121.800244) )
                 .title("Location")
-                .snippet("First Marker")).showInfoWindow();
+                .snippet("My Location")).showInfoWindow();
+
+        mMap.addMarker( new MarkerOptions()
+                //19.0216, 72.8646
+                .position( new LatLng(36.663365, -121.791969) )
+                .title("Yard 2")
+                .snippet("Yard Available")).showInfoWindow();
+
+
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
