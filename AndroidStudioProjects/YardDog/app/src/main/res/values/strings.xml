@@ -83,7 +83,7 @@
 
     <string name="your_dog">Your Dogs</string>
     <string name="your_dog_pepper">Pepper</string>
-    <string name="your_dog_tobi">Tobi</string>
+    <string name="your_dog_tobi">Toby</string>
     <string name="your_dog_add">Add New Dog</string>
     <string name="title_activity_create_dog_profile">CreateDogProfile</string>
 
@@ -99,5 +99,15 @@
     <string name="add_dog_bio">Enter a bio: </string>
     <string name="add_dog_biof">Description </string>
     <string name="pepperTitle">Pepper</string>
+    <string name="title_activity_profile_dog_view_toby">ProfileDogViewToby</string>
+    <string name="tobyTitle">Toby</string>
+    <string name="title_activity_other_yard">OtherYard</string>
+
+    <string name="other">Name: Akuang Saechao</string>
+    <string name="other_add">Address:</string>
+    <string name="other_add3">1113 Kiska Court</string>
+    <string name="other_add2">Seaside, CA 93933</string>
+    <string name="other_des">Description: Lives with 2 roommates all
+        who loves dogs but only takes in small dogs</string>
 
 </resources>

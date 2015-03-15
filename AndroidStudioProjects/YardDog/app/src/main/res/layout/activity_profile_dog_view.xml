@@ -43,7 +43,8 @@
         android:paddingBottom="5dp"
         android:ellipsize="start"
         android:gravity="center"
-        android:enabled="false" />
+        android:enabled="false"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -71,7 +72,8 @@
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,7 +102,8 @@
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -128,7 +131,8 @@
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         android:ellipsize="start"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#000000"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -153,7 +157,7 @@
         android:paddingLeft="10dp"
         android:paddingBottom="130dp"
         android:background="@drawable/edittextstyle"
-        />
+        android:textColor="#000000"/>
 
     <Button
         android:layout_width="fill_parent"

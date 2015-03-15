@@ -19,6 +19,21 @@ public class ProfileDog extends ActionBarActivity {
 
         this.addListenerOnButtonPepper();
         this.addListenerOnButtonCreateDog();
+        this.addListenerOnButtonToby();
+    }
+
+    public void addListenerOnButtonToby() {
+
+        Button button;
+        final Context context = this;
+        button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ProfileDogViewToby.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void addListenerOnButtonPepper() {

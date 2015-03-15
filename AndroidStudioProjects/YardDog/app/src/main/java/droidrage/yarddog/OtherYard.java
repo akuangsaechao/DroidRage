@@ -10,25 +10,26 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class FindYard extends ActionBarActivity {
+public class OtherYard extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_yard);
+        setContentView(R.layout.activity_other_yard);
 
-        this.addListenerOnButtonProfile();
+        this.addListenerOnButtonConfirm();
     }
 
-    public void addListenerOnButtonProfile() {
+    public void addListenerOnButtonConfirm() {
 
         Button button;
         final Context context = this;
-        button = (Button) findViewById(R.id.button1);
+        button = (Button) findViewById(R.id.button8);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, Map.class);
+                Intent intent = new Intent(context, Home.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
         });
@@ -37,7 +38,7 @@ public class FindYard extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_find_yard, menu);
+        getMenuInflater().inflate(R.menu.menu_other_yard, menu);
         return true;
     }
 

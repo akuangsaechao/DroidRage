@@ -78,7 +78,8 @@
         android:background="@drawable/edittextstyle"
         android:layout_alignTop="@+id/linearLayout"
         android:layout_alignLeft="@+id/editText5"
-        android:layout_alignStart="@+id/editText5" />
+        android:layout_alignStart="@+id/editText5"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -96,7 +97,8 @@
         android:background="@drawable/edittextstyle"
         android:layout_above="@+id/editText4"
         android:layout_toLeftOf="@+id/linearLayout"
-        android:layout_toStartOf="@+id/linearLayout" />
+        android:layout_toStartOf="@+id/linearLayout"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -113,7 +115,8 @@
         android:hint="@string/time"
         android:background="@drawable/edittextstyle"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -132,7 +135,8 @@
         android:layout_below="@+id/editText4"
         android:layout_alignLeft="@+id/editText4"
         android:layout_alignStart="@+id/editText4"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="36dp"
+        android:textColor="#000000"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -150,7 +154,8 @@
         android:background="@drawable/edittextstyle"
         android:layout_below="@+id/editText2"
         android:layout_toLeftOf="@+id/linearLayout"
-        android:layout_toStartOf="@+id/linearLayout" />
+        android:layout_toStartOf="@+id/linearLayout"
+        android:textColor="#000000"/>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
