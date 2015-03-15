@@ -67,5 +67,6 @@
     <string name="img.edit">+</string>
     <string name="address">Enter Your Address</string>
     <string name="description">Enter Yard Description</string>
+    <string name="title_activity_test_drag_marker">TestDragMarker</string>
 
 </resources>
