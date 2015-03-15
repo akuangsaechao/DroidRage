@@ -1,5 +1,7 @@
 package droidrage.yarddog;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.IntentSender;
 import android.location.Location;
 import android.os.Bundle;
@@ -17,6 +19,8 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
 import com.google.android.gms.maps.GoogleMap.OnMapLongClickListener;
@@ -32,7 +36,7 @@ public class Map extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener,
-        OnMapLongClickListener,OnMapClickListener,OnMarkerDragListener {
+        OnMapLongClickListener,OnMarkerDragListener {
 
     public static final String TAG = Map.class.getSimpleName();
 
@@ -130,7 +134,14 @@ public class Map extends FragmentActivity implements
                     .getMap();
             mMap.setOnMarkerDragListener(this);
             mMap.setOnMapLongClickListener(this);
-            mMap.setOnMapClickListener(this);
+            mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener(){
+                @Override
+                public boolean onMarkerClick(Marker marker) {
+                    Intent intent = new Intent(Map.this,OtherYard.class);
+                    startActivity(intent);
+                    return false;
+                }
+            });
             //mMap.setOnInfoWindowClickListener(listener);
 
             myMarker = mMap.addMarker(new MarkerOptions()
@@ -244,11 +255,6 @@ public class Map extends FragmentActivity implements
 
     }
 
-    @Override
-    public void onMapClick(LatLng arg0) {
-        // TODO Auto-generated method stub
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(arg0));
-    }
 
 
     @Override
@@ -256,21 +262,11 @@ public class Map extends FragmentActivity implements
         // TODO Auto-generated method stub
 
         //create new marker when user long clicks
-        mMap.addMarker(new MarkerOptions()
+        myMarker = mMap.addMarker(new MarkerOptions()
                 .position(arg0)
                 .draggable(true));
     }
 
-    //@Override
-    public boolean onMarkerClick(final Marker marker) {
-
-        if (marker.equals(myMarker))
-        {
-            //handle click here
-        }
-
-        return true;
-    }
 
 
 //    public void addListenerOnButtonConfirm() {
