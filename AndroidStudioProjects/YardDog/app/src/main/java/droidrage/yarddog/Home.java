@@ -1,11 +1,7 @@
 package droidrage.yarddog;
 
-<<<<<<< HEAD
-
-=======
 import android.content.Context;
 import android.content.Intent;
->>>>>>> josh
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,21 +10,17 @@ import android.view.View;
 import android.widget.Button;
 
 
-
 public class Home extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-<<<<<<< HEAD
-=======
         Intent intent = getIntent();
 
         this.addListenerOnButtonOpenYard();
         this.addListenerOnButtonProfile();
         this.addListenerOnButtonFilters();
->>>>>>> josh
     }
 
     public void addListenerOnButtonOpenYard() {
@@ -72,7 +64,6 @@ public class Home extends ActionBarActivity {
             }
         });
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
