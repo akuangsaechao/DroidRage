@@ -67,5 +67,37 @@
     <string name="img.edit">+</string>
     <string name="address">Enter Your Address</string>
     <string name="description">Enter Yard Description</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+
+    <string name="create_profile">Create Your Profile</string>
+    <string name="create_profile_fname">First Name</string>
+    <string name="create_profile_fname_e">Enter First Name: </string>
+    <string name="create_profile_lname">Last Name</string>
+    <string name="create_profile_lname_e">Enter Last Name: </string>
+    <string name="create_profile_email">Email</string>
+    <string name="create_profile_email_e">Enter Email: </string>
+    <string name="create_profile_pass_e">Enter Password: </string>
+    <string name="create_profile_pass">Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_profile_dog_view">ProfileDogView</string>
+
+    <string name="your_dog">Your Dogs</string>
+    <string name="your_dog_pepper">Pepper</string>
+    <string name="your_dog_tobi">Tobi</string>
+    <string name="your_dog_add">Add New Dog</string>
+    <string name="title_activity_create_dog_profile">CreateDogProfile</string>
+
+    <string name="add_dog">Add a New Dog</string>
+    <string name="add_dog_name">Enter a name: </string>
+    <string name="add_dog_namef">Name </string>
+    <string name="add_dog_gender">Enter a gender: </string>
+    <string name="add_dog_genderf">Gender </string>
+    <string name="add_dog_type">Enter a breed: </string>
+    <string name="add_dog_typef">Breed </string>
+    <string name="add_dog_size">Enter a size: </string>
+    <string name="add_dog_sizef">Size </string>
+    <string name="add_dog_bio">Enter a bio: </string>
+    <string name="add_dog_biof">Description </string>
+    <string name="pepperTitle">Pepper</string>
 
 </resources>

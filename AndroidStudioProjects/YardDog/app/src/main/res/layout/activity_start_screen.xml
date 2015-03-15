@@ -63,7 +63,7 @@
 
     <Button
         android:background="@drawable/red_button"
-        android:id="@string/newAccountButtonText"
+        android:id="@+id/createAccount"
         android:layout_width="fill_parent"
         android:layout_height="66dp"
         android:text="@string/newAccountButtonText"

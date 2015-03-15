@@ -10,12 +10,12 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class ProfileYou extends ActionBarActivity {
+public class ProfileDogView extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_you);
+        setContentView(R.layout.activity_profile_dog_view);
 
         this.addListenerOnButtonConfirm();
     }
@@ -24,21 +24,22 @@ public class ProfileYou extends ActionBarActivity {
 
         Button button;
         final Context context = this;
-        button = (Button) findViewById(R.id.button7);
+        button = (Button) findViewById(R.id.button5);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, Profile.class);
+                Intent intent = new Intent(context, ProfileDog.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
         });
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_profile_you, menu);
+        getMenuInflater().inflate(R.menu.menu_profile_dog_view, menu);
         return true;
     }
 

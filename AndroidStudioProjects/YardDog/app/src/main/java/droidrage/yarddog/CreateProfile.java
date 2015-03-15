@@ -10,26 +10,25 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class ProfileYou extends ActionBarActivity {
+public class CreateProfile extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_you);
+        setContentView(R.layout.activity_create_profile);
 
-        this.addListenerOnButtonConfirm();
+        this.addListenerOnButtonAccept();
     }
 
-    public void addListenerOnButtonConfirm() {
+    public void addListenerOnButtonAccept() {
 
         Button button;
         final Context context = this;
-        button = (Button) findViewById(R.id.button7);
+        button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, Profile.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                Intent intent = new Intent(context, Home.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +37,7 @@ public class ProfileYou extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_profile_you, menu);
+        getMenuInflater().inflate(R.menu.menu_create_profile, menu);
         return true;
     }
 

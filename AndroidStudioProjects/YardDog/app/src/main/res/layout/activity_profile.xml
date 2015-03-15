@@ -44,12 +44,20 @@
         android:text="@string/profile_your_yard"
         android:id="@+id/yourYard"
         android:layout_height="66dp"
-
         android:background="@drawable/red_button"
         android:layout_width="fill_parent"
         style="@style/button_text"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/yourDogs"
-        android:layout_alignStart="@+id/yourDogs" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_height="250dp"
+        android:layout_width="250dp"
+        android:id="@+id/round_profile"
+        android:src="@drawable/round_profile"
+        android:layout_above="@+id/yourProfile"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

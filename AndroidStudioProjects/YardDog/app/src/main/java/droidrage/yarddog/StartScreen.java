@@ -17,10 +17,11 @@ public class StartScreen extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_screen);
 
-        this.addListenerOnButton();
+        this.addListenerOnButtonLogin();
+        this.addListenerOnButtonNewAccount();
     }
 
-    public void addListenerOnButton() {
+    public void addListenerOnButtonLogin() {
 
         Button button;
         final Context context = this;
@@ -32,6 +33,20 @@ public class StartScreen extends ActionBarActivity {
                 startActivity(intent);
             }
 
+        });
+    }
+
+    public void addListenerOnButtonNewAccount() {
+
+        Button button;
+        final Context context = this;
+        button = (Button) findViewById(R.id.createAccount);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, CreateProfile.class);
+                startActivity(intent);
+            }
         });
     }
 
